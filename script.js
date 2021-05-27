@@ -32,24 +32,6 @@
 const btn = document.querySelector("button");
 const searchbar = document.querySelector(".searchbar");
 
-let count = 0;
 btn.addEventListener('click',() => {
-        count++;
-        update2();}
+    searchbar.classList.toggle('active')}
     );
-
-function update2(){
-    if(count===1){
-        searchbar.classList.add('active');
-        console.log(searchbar);
-        console.log(btn);
-        console.log(count);
-    };
-    if(count===2){
-        searchbar.classList.remove('active');
-        console.log(searchbar);
-        count--;
-        count--;
-        console.log(count);
-    };      
-};
